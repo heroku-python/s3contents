@@ -60,8 +60,8 @@ class S3FS(GenericFS):
 
     def init(self):
         self.mkdir("")
-        self.ls("")
-        self.isdir("")
+        # self.ls("")
+        # self.isdir("")
 
     #  GenericFS methods -----------------------------------------------------------------------------------------------
 
