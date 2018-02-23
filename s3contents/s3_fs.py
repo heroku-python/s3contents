@@ -90,6 +90,9 @@ class S3FS(GenericFS):
         return is_file
 
     def isdir(self, path):
+        if path == "":
+            return True
+        
         path_ = self.path(path)
         is_dir = False
 
